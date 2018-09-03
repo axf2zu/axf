@@ -1,15 +1,11 @@
-{% extends "user/base_user.html" %}
-{% load static %}
-
-
-{% block extJS %}
-   {{ block.super }}
-    <!--<script type="text/javascript" src="{% static "app/user/user.js" %}"></script>-->
-
-{% endblock %}
-
-{% block content %}
-    <div style="padding: 20px">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <div style="padding: 20px">
         <form action="#" method="post" enctype="multipart/form-data" onsubmit="return check_input()">
             {% csrf_token %}
             <div class="form-group">
@@ -43,4 +39,5 @@
         </form>
 
     </div>
-{% endblock %}
+</body>
+</html>
